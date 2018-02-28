@@ -1,5 +1,5 @@
 # bash-tricks
-Random bash command or scripting commands I find useful, and a place to quickly lookup stuff I don't do all the time.
+Random bash command or scripting commands I find useful, and a place to quickly lookup stuff I don't do all the time. A great resource to learn, or as a refresher is: https://ryanstutorials.net/bash-scripting-tutorial/
 
 # shortcuts
  * `!!` - repeats last command
