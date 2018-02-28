@@ -3,7 +3,7 @@ Random bash command or scripting commands I find useful, and a place to quickly 
 
 # shortcuts
  * `!!` - repeats last command
-  * usage: `sudo !!` to repeat a command that needs sudo
+   * usage: `sudo !!` to repeat a command that needs sudo
 
 # scripting
 ## shebang
@@ -11,20 +11,20 @@ Random bash command or scripting commands I find useful, and a place to quickly 
 
 ## variables
  * `varname=value` - setting our own values
-  * usage: `foo=bar && echo $foo` (basic)
-  * quotes: `greeting='hello world' && echo $greeting` (literal)
-  * quotes: `intro="well $greeting" && echo $intro` (substitution)
-  * commands: `lines=$(cat somefile | wc -l)` (command substitution)
-  * export: `export var=value` (export to shell so accessible in other scripts)
-  * length: `${#varname}` (prints number of characters in varname)
+   * usage: `foo=bar && echo $foo` (basic)
+   * quotes: `greeting='hello world' && echo $greeting` (literal)
+   * quotes: `intro="well $greeting" && echo $intro` (substitution)
+   * commands: `lines=$(cat somefile | wc -l)` (command substitution)
+   * export: `export var=value` (export to shell so accessible in other scripts)
+   * length: `${#varname}` (prints number of characters in varname)
  * `$0` - name of script
  * `$1-9` - first 9 arguments passed to script
-  * usage: `echo $1`
+   * usage: `echo $1`
  * `$@` - all arguments passed to script
  * `$_` - prints target of last command (like folder created)
-  * usage: `mkdir somefolder && cd $_`
+   * usage: `mkdir somefolder && cd $_`
  * `$#` - counts number of arguments
-  * usage: `if [$# -lt 2] then echo "missing required args" exit fi`
+   * usage: `if [$# -lt 2] then echo "missing required args" exit fi`
  * `$$` - current process ID
  * `$!` - background process ID
  * `$?` - exit status of last executed process
@@ -32,18 +32,18 @@ Random bash command or scripting commands I find useful, and a place to quickly 
  * `$HOSTNAME` - hostname of machine script is running on
  * `$SECONDS` - number of seconds since script was started
  * `$RANDOM` - returns different random number each time
-  * usage `echo $RANDOM`
+   * usage `echo $RANDOM`
  * `$LINENO` - returns current line number in bash script
 
 ## input
  * `read varname` - waits for user input and assigns value to `$varname`
-  * usage: `echo "What is your name?" && read firstname && echo -e "Hello, $firstname"`
+   * usage: `echo "What is your name?" && read firstname && echo -e "Hello, $firstname"`
  * `read var1 var2 var3` - allows user to input multiple values
-  * usage: `echo "3 favorite colors?" && read col1 col2 col3 && echo -e "You like $col1, $col2, $col3"`
+   * usage: `echo "3 favorite colors?" && read col1 col2 col3 && echo -e "You like $col1, $col2, $col3"`
  * `read -p 'Prompt: ' varname` - prompts for input
-  * usage: `read -p 'Username: ' uservar && echo -e "Hello, $uservar"`
+   * usage: `read -p 'Username: ' uservar && echo -e "Hello, $uservar"`
  * `read -sp 'Prompt: ' varname` - prompt for input with hidden values
-  * usage: `read -sp 'Password: ' passvar && echo -e 'Your password is updated!'`
+   * usage: `read -sp 'Password: ' passvar && echo -e 'Your password is updated!'`
 
 ## arithmetic
  * `let var = 5 + 3` - assigns result to var
