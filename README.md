@@ -19,6 +19,7 @@ sudo bash -c "echo $(brew --prefix)/bin/bash >> /private/etc/shells"
 declare -A array
 array[foo]=bar
 array[bar]=foo
+echo ${array[foo]} # bar
 ```
 
 # scripting
