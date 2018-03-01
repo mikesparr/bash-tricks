@@ -5,6 +5,22 @@ Random bash command or scripting commands I find useful, and a place to quickly 
  * `!!` - repeats last command
    * usage: `sudo !!` to repeat a command that needs sudo
 
+# associative arrays
+## upgrade to bash 4 on OSX
+```
+brew install bash
+sudo bash -c "echo $(brew --prefix)/bin/bash >> /private/etc/shells"
+```
+ * Preferences > Users & Groups > Right-click (user) > Advanced Options > Login Shell: `/usr/local/bin/bash`
+ * Reboot computer
+
+## example usage
+```
+declare -A array
+array[foo]=bar
+array[bar]=foo
+```
+
 # scripting
 ## shebang
  * `#!/usr/bin/env bash` - shebang line that is more portable
