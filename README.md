@@ -34,6 +34,7 @@ echo ${array[foo]} # bar
    * commands: `lines=$(cat somefile | wc -l)` (command substitution)
    * export: `export var=value` (export to shell so accessible in other scripts)
    * length: `${#varname}` (prints number of characters in varname)
+   * truncate: `"${varname: -n}"` (prints last n chars - NEED QUOTES)
  * `$0` - name of script
  * `$1-9` - first 9 arguments passed to script
    * usage: `echo $1`
