@@ -20,6 +20,10 @@ declare -A array
 array[foo]=bar
 array[bar]=foo
 echo ${array[foo]} # bar
+
+# combined and !varname[@] gives keys
+declare -A animals=( ["moo"]="cow" ["woof"]="dog")
+for sound in "${!animals[@]}"; do echo "$sound - ${animals[$sound]}"; done
 ```
 
 # scripting
