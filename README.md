@@ -4,6 +4,9 @@ Random bash command or scripting commands I find useful, and a place to quickly 
 # shortcuts
  * `!!` - repeats last command
    * usage: `sudo !!` to repeat a command that needs sudo
+ * `xxd -l16 -ps /dev/urandom` - generates random string
+   * usage: `export SOME_STRING=$(xxd -l${1:-16} -ps /dev/urandom)`
+   * (defaults to 16 or passing in arg overrides)
 
 # associative arrays
 ## upgrade to bash 4 on OSX
